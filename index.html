@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaivisvanth Portfolio</title>
+    <link rel="shortcut icon" href="./Assests/fav icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Iceberg&family=Lato:wght@100;300;400;700;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <div id="nav-bar">
+        <div id="nav-1" class="nav-con">Jaivisvanth</div>
+        <div id="nav-2" class="nav-con">
+            <span class="nav-item">About</span>
+            <span class="nav-item" id="projects-btn">Projects</span>
+            <span class="nav-item">Contacts</span>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <img src="./Assests/image.svg" alt="Background" id="bg">
+
+    <div id="con">
+        <h3 id="gra-dis">GRAPHIC DESIGNER</h3>
+        <h1 id="head">Hello, I am <br> Jaivisvanth D</h1>
+        <p id="con-txt">
+            A budding graphic designer with a passion for visual storytelling. Recently graduated
+            with a degree in BE Computer Science Engineering, I'm eager to bring fresh ideas
+            and creativity to the world of design.
+        </p>
+        <button class="lan-btn" id="lan-btn1">Projects</button>
+        <button class="lan-btn" id="lan-btn2" onclick="location.href='contact.html'">LinkedIn</button>
+    </div>
+
+    <!-- Projects Section (Centered) -->
+    <section id="projects-section">
+        <h2>Projects</h2>
+        <p>Here are some of my featured projects showcasing my work in graphic design.</p>
+        <div id="flyer-con">
+            <div>
+                <img src="./Assests/chickem tangri psd.jpg" alt="" id="flyer-pro">
+            </div>
+            <div id="flyer-txt">
+                <h2 id="f-h">
+                    Flyer Design
+                </h2>
+
+                <p>
+                    Flyer design is all about creating visually appealing
+                    and informative promotional materials to grab
+                    attention and convey a message quickly.
+                </p>
+                <button id="flyer-btn" onclick="location.href='flyer design.html'">
+                    View My Work
+                </button>
+            </div>
+        </div>
+
+        <div id="baner-con">
+
+            <div id="baner-txt">
+                <h2 id="b-h">
+                    Web Banner
+                </h2>
+
+                <p>
+                    Web banners are graphic
+                    advertisements displayed on web
+                    pages to promote products,
+                    services, or events.
+                </p>
+                <button id="baner-btn" onclick="location.href='banner design.html'">
+                    View My Work
+                </button>
+            </div>
+            <div>
+                <img src="./Assests/Artboard 1.jpg" alt="" id="baner-pro">
+            </div>
+        </div>
+
+        <div id="lander-con">
+            <div>
+                <img src="./Assests/6.jpg" alt="" id="lander-pro">
+            </div>
+            <div id="lander-txt">
+                <h2 id="l-h">
+                    Website Lander
+                </h2>
+
+                <p>
+                    A landing page is a crucial element for any website, 
+                    designed to convert visitors into leads or customers
+                </p>
+                <button id="lander-btn" onclick="location.href='lander design.html'">
+                    View My Work
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <div id="contact-con">
+            <div id="contact-svg">
+                <img src="./Assests/insta-svg.svg" alt="" srcset="      " id="contact-svg1">
+                <img src="./Assests/linkedi-svg.svg" alt="" srcset="" id="contact-svg2">
+                <img src="./Assests/mail-svg.svg" alt="" srcset="" id="contact-svg3">
+            </div>
+            <div id="footer-name">
+                <span>Jaivisvanth</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript for Smooth Scrolling -->
+    <script>
+        document.getElementById("lan-btn1").addEventListener("click", function () {
+            document.getElementById("projects-section").scrollIntoView({ behavior: "smooth" });
+        });
+
+        document.getElementById("projects-btn").addEventListener("click", function () {
+            document.getElementById("projects-section").scrollIntoView({ behavior: "smooth" });
+        });
+    </script>
+
+</body>
+
+</html>
